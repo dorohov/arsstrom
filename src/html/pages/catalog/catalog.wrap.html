@@ -1,0 +1,19 @@
+<div class="catalog slide">
+    <div class="catalog__inner container">
+        <div class="catalog__top">
+            <div class="catalog__top__heading">
+                @@include('../../items/items.heading.html', {
+                    "title": "Каталог продукции",
+                    "sub": false,
+                    "sub_text": "",
+                    "align": "left"
+                })
+            </div>
+            <div class="catalog__top__filters"></div>
+        </div>
+        <div class="catalog__wrap">
+            @@include('catalog.aside.html')
+            @@include('catalog.list.html', {"bread": "@@bread"})
+        </div>
+    </div>
+</div>

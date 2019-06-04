@@ -1,3 +1,73 @@
 <header class="navbar">
-    
+    <div class="navbar__inner container">
+        <div class="navbar__logo"><a href="@@pages.index">@@include('components.svg.html', {"name": "arsstrom"})</a></div>
+        <div class="navbar__menu">@@include('components.menu.html')</div>
+        <div class="navbar__phone">
+            <a href="@@phone_link">
+                <span class="is--icon">@@include('components.svg.html', {"name": "phone"})</span>
+                @@phone
+            </a>
+        </div>
+        <div class="navbar__userpanel">
+            <div class="navbar__userpanel__btns">
+                <div class="navbar__userpanel__icon">
+                    <a href="@@pages.cabinet">
+                        @@include('components.svg.html', {"name": "user"})
+                    </a>
+                </div>
+                <div class="navbar__userpanel__icon">
+                    <a href="@@pages.cabinet.basket">
+                        @@include('components.svg.html', {"name": "cart"})
+                        <span class="is--label">1</span>
+                    </a>
+                </div>
+                <div class="navbar__userpanel__icon">
+                    <a id="openSearchNavbarField">
+                        @@include('components.svg.html', {"name": "search"})
+                    </a>
+                </div>
+            </div>
+            <div class="navbar__userpanel__field">
+                <form action="#">
+                    <input type="text">
+                    <button type="submit">
+                        @@include('components.svg.html', {"name": "search"})
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar__btn">
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </div>
 </header>
+<div class="mobilemenu">
+    <div class="mobilemenu__menu">@@include('components.menu.html')</div>
+    <div class="mobilemenu__userpanel__btns">
+        <div class="mobilemenu__userpanel__btns__inner">
+            <div class="mobilemenu__userpanel__icon">
+                <a href="@@pages.cabinet">
+                    @@include('components.svg.html', {"name": "user"})
+                </a>
+            </div>
+            <div class="mobilemenu__userpanel__icon">
+                <a href="@@pages.cabinet.basket">
+                    @@include('components.svg.html', {"name": "cart"})
+                    <span class="is--label">1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobilemenu__search">
+        <form action="#">
+            <input type="text" placeholder="Поиск">
+            <button type="submit">
+                @@include('components.svg.html', {"name": "search"})
+            </button>
+        </form>
+    </div>
+</div>

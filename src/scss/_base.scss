@@ -1,5 +1,13 @@
 body {
-
+    font-family: 'PT Sans Narrow';
+    &.is--overlay {
+        overflow: hidden;
+    }
+    &.is--mm {
+        .mobilemenu {
+            transform: none;
+        }
+    }
 }
 
 *,
@@ -27,4 +35,8 @@ img {
 img {
     max-width: 100%;
     width: 100%;
+}
+
+.slick-slide {
+    outline: none;
 }

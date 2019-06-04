@@ -1,0 +1,320 @@
+.navbar {
+    background: $green;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    &__inner {
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        height: 100%;
+        margin-right: 70px;
+        a {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+    &__menu {
+        height: 100%;
+        ul {
+            display: flex;
+            height: 100%;
+            li {
+                height: 100%;
+                a {
+                    padding: 0 35px;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    color: #fff;
+                    font-size: 18px;
+                    transition: .25s all ease;
+                    white-space: nowrap;
+                    &:hover {
+                        background: #fff;
+                        color: $green;
+                    }
+                }
+                &.is--active {
+                    a {
+                        color: $green;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &__phone {
+        height: 100%;
+        padding: 0 35px;
+        margin-left: auto;
+        a {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #fff;
+            height: 100%;
+            white-space: nowrap;
+            &:hover {
+                color: $orange;
+            }
+            span {
+                display: block;
+                margin-right: 5px;
+                svg {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    &__userpanel {
+        position: relative;
+        padding-left: 65px;
+        &.is--open {
+            .navbar__userpanel__field {
+                display: block;
+            }
+        }
+        &__btns {
+            display: flex;
+            margin: 0 -25px;
+        }
+        &__field {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+            form {
+                position: relative;
+                input[type="text"] {
+                    height: 45px;
+                    width: 100%;
+                    display: block;
+                    background: $lime;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    padding: 0 40px 0 15px;
+                }
+                button[type="submit"] {
+                    position: absolute;
+                    right: 10px;
+                    background: transparent;
+                    border: none;
+                    top: 50%;
+                    margin-top: -11px;
+                    outline: none;
+                    cursor: pointer;
+                    svg {
+                        fill: $green;
+                    }
+                }
+            }
+        }
+        &__icon {
+            a {
+                display: block;
+                margin: 0 15px;
+                padding: 10px;
+                position: relative;
+                cursor: pointer;
+                svg {
+                    fill: #fff;
+                    transition: .25s all ease;
+                }
+                span {
+                    &.is--label {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 14px;
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: $orange;
+                        border-radius: 100%;
+                    }
+                }
+                &:hover {
+                    svg {
+                        fill: $orange;
+                    }
+                }
+            }
+        }
+    }
+    &__btn {
+        display: none;
+        margin-left: auto;
+        margin-right: -15px;
+        button {
+            outline: none;
+        }
+        .hamburger-inner {
+            background-color: $olive !important;
+            &::before,
+            &::after {
+                background-color: $olive !important;
+            }
+        }
+    }
+}
+
+.mobilemenu {
+    height: calc(100vh - 70px);
+    max-width: 320px;
+    width: 100%;
+    background: $lime;
+    z-index: 99999999999;
+    position: relative;
+    transform: translateX(-100%);
+    transition: .25s all ease;
+    position: fixed;
+    display: none;
+    &__menu {
+        padding: 30px 0 20px 0;
+        ul {
+            li {
+                a {
+                    color: $green;
+                    font-size: 20px;
+                    display: block;
+                    padding: 10px 20px;
+                }
+                &.is--active {
+                    a {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    &__search {
+        padding: 0 20px;
+        form {
+            position: relative;
+            input[type="text"] {
+                height: 45px;
+                width: 100%;
+                display: block;
+                background: #fff;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                padding: 0 40px 0 15px;
+            }
+            button[type="submit"] {
+                position: absolute;
+                right: 10px;
+                background: transparent;
+                border: none;
+                top: 50%;
+                margin-top: -11px;
+                outline: none;
+                cursor: pointer;
+                svg {
+                    fill: $green;
+                }
+            }
+        }
+    }
+    &__userpanel {
+        &__btns {
+            padding: 0 20px;
+            margin-bottom: 30px;
+            &__inner {
+                display: flex;
+                margin-left: -15px;
+            }
+        }
+        &__icon {
+            a {
+                display: block;
+                margin: 0 5px;
+                padding: 10px;
+                position: relative;
+                cursor: pointer;
+                svg {
+                    fill: $green;
+                    transition: .25s all ease;
+                }
+                span {
+                    &.is--label {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 14px;
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: $orange;
+                        border-radius: 100%;
+                    }
+                }
+                &:hover {
+                    svg {
+                        fill: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .navbar {
+        &__logo {
+            margin-right: 30px;
+        }
+        &__menu {
+            ul {
+                li {
+                    a {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+        &__userpanel {
+            padding-left: 15px;
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .navbar {
+        .navbar {
+            &__menu,
+            &__phone,
+            &__userpanel {
+                display: none;
+            }
+        }
+        &__inner {
+            height: 70px;
+        }
+        &__btn {
+            display: block;
+        }
+    }
+    .mobilemenu {
+        display: block;
+    }
+}

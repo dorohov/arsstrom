@@ -1,0 +1,124 @@
+.in {
+    &-banner {
+        &__item {
+            background-size: cover;
+            background-position: center;
+            &__left {
+                min-height: calc(100vh - 100px);
+                height: 100%;
+                max-width: 840px;
+                width: 100%;
+                background: rgba(#123208, .6);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 80px 100px 80px 150px;
+            }
+            &__heading {
+                color: #fff;
+                font-family: 'BravoSC';
+                font-size: 96px;
+                line-height: 92%;
+                margin-bottom: 30px;
+            }
+            &__desc {
+                font-size: 24px;
+                color: #fff;
+                line-height: 100%;
+                margin-bottom: 70px;
+            }
+        }
+        &__arrows {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            button {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background: $green;
+                border: none;
+                padding: 0;
+                outline: none;
+                cursor: pointer;
+                svg {
+                    fill: $orange;
+                    transition: .25s all ease;
+                }
+                &:hover {
+                    svg {
+                        fill: #fff;
+                    }
+                }
+                &.is--prev {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .in {
+        &-banner {
+            &__item {
+                &__left {
+                    min-height: calc(100vh - 70px);
+                    padding: 80px 50px 80px 50px;
+                    max-width: 580px;
+                }
+                &__heading {
+                    font-size: 56px;
+                    margin-bottom: 20px;
+                }
+                &__desc {
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .in {
+        &-banner {
+            &__item {
+                &__left {
+                    padding: 80px 20px;
+                    min-height: calc(100vh - 70px);
+                }
+                &__heading {
+                    font-size: 36px;
+                    br {
+                        display: none;
+                    }
+                }
+                &__desc {
+                    font-size: 18px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            &__arrows {
+                display: flex;
+                flex-flow: wrap;
+                width: 100%;
+                button {
+                    max-width: 50%;
+                    width: 100%;
+                    height: 50px;
+                    &.is--prev {
+                        order: 0;
+                    }
+                    &.is--next {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+}

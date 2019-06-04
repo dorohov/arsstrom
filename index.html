@@ -12,10 +12,184 @@
 
 <body>
     <header class="navbar">
+        <div class="navbar__inner container">
+            <div class="navbar__logo"><a href="index.html"><svg class="svg-arsstrom-dims svg is--arsstrom">
+                        <use xlink:href="img/svg/sprites.svg#arsstrom"></use>
+                    </svg></a></div>
+            <div class="navbar__menu">
+                <ul>
 
+                    <li class=""><a href="index.html">Главная</a></li>
+
+                    <li class=""><a href="about.html">О компании</a></li>
+
+                    <li class="is--active"><a href="catalog.html">Каталог</a></li>
+
+                    <li class=""><a href="price.html">Прайс</a></li>
+
+                    <li class=""><a href="delivery.html">Оплата и доставка</a></li>
+
+                    <li class=""><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar__phone">
+                <a href="tel:84955329069">
+                    <span class="is--icon"><svg class="svg-phone-dims svg is--phone">
+                            <use xlink:href="img/svg/sprites.svg#phone"></use>
+                        </svg></span>
+                    +7 (495) 532-90-69
+                </a>
+            </div>
+            <div class="navbar__userpanel">
+                <div class="navbar__userpanel__btns">
+                    <div class="navbar__userpanel__icon">
+                        <a href="cabinet.html">
+                            <svg class="svg-user-dims svg is--user">
+                                <use xlink:href="img/svg/sprites.svg#user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="navbar__userpanel__icon">
+                        <a href="cabinet.basket.html">
+                            <svg class="svg-cart-dims svg is--cart">
+                                <use xlink:href="img/svg/sprites.svg#cart"></use>
+                            </svg>
+                            <span class="is--label">1</span>
+                        </a>
+                    </div>
+                    <div class="navbar__userpanel__icon">
+                        <a id="openSearchNavbarField">
+                            <svg class="svg-search-dims svg is--search">
+                                <use xlink:href="img/svg/sprites.svg#search"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__userpanel__field">
+                    <form action="#">
+                        <input type="text">
+                        <button type="submit">
+                            <svg class="svg-search-dims svg is--search">
+                                <use xlink:href="img/svg/sprites.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="navbar__btn">
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
     </header>
-    <main>
+    <div class="mobilemenu">
+        <div class="mobilemenu__menu">
+            <ul>
 
+                <li class=""><a href="index.html">Главная</a></li>
+
+                <li class=""><a href="about.html">О компании</a></li>
+
+                <li class="is--active"><a href="catalog.html">Каталог</a></li>
+
+                <li class=""><a href="price.html">Прайс</a></li>
+
+                <li class=""><a href="delivery.html">Оплата и доставка</a></li>
+
+                <li class=""><a href="contacts.html">Контакты</a></li>
+
+            </ul>
+        </div>
+        <div class="mobilemenu__userpanel__btns">
+            <div class="mobilemenu__userpanel__btns__inner">
+                <div class="mobilemenu__userpanel__icon">
+                    <a href="cabinet.html">
+                        <svg class="svg-user-dims svg is--user">
+                            <use xlink:href="img/svg/sprites.svg#user"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mobilemenu__userpanel__icon">
+                    <a href="cabinet.basket.html">
+                        <svg class="svg-cart-dims svg is--cart">
+                            <use xlink:href="img/svg/sprites.svg#cart"></use>
+                        </svg>
+                        <span class="is--label">1</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobilemenu__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                    <svg class="svg-search-dims svg is--search">
+                        <use xlink:href="img/svg/sprites.svg#search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <div class="in-banner">
+            <div class="in-banner__items">
+                <div class="in-banner__item" style="background-image: url(img/slide1.jpg);">
+                    <div class="in-banner__item__inner">
+                        <div class="in-banner__item__left">
+                            <div class="in-banner__item__content">
+                                <div class="in-banner__item__heading">Товары для сада <br> и огорода</div>
+                                <div class="in-banner__item__desc">Производственное предприятие «Клевер С» с 2006 года <br> производит и реализует товары народного потребления <br> для сада и огорода, хозтовары.</div>
+                                <div class="in-banner__item__btn">
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="in-banner__item" style="background-image: url(img/slide2.jpg);">
+                    <div class="in-banner__item__inner">
+                        <div class="in-banner__item__left">
+                            <div class="in-banner__item__content">
+                                <div class="in-banner__item__heading">Товары для сада <br> и огорода2</div>
+                                <div class="in-banner__item__desc">2 Производственное предприятие «Клевер С» с 2006 года <br> производит и реализует товары народного потребления <br> для сада и огорода, хозтовары.</div>
+                                <div class="in-banner__item__btn">
+                                    <a href="#" class="btn">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="in-banner__arrows">
+                <button class="is--next"><svg class="svg-arrow-dims svg is--arrow">
+                        <use xlink:href="img/svg/sprites.svg#arrow"></use>
+                    </svg></button>
+                <button class="is--prev"><svg class="svg-arrow-dims svg is--arrow">
+                        <use xlink:href="img/svg/sprites.svg#arrow"></use>
+                    </svg></button>
+            </div>
+        </div>
+        <div class="catalog slide">
+            <div class="catalog__inner container">
+                <div class="catalog__top">
+                    <div class="catalog__top__heading">
+                        <div class="heading is--left">
+                            <div class="heading__text">Каталог продукции</div>
+
+                        </div>
+                    </div>
+                    <div class="catalog__top__filters"></div>
+                </div>
+                <div class="catalog__wrap">
+                    <div class="catalog__aside"></div>
+                    <div class="catalog__list"></div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
 
@@ -27,6 +201,7 @@
     <script src="dist/js/svg4everybody.min.js"></script>
     <script src="dist/js/parsley.min.js"></script>
     <script src="dist/js/i18n/ru.js"></script>
+    <script src="dist/js/slick.min.js"></script>
     <script>
         svg4everybody();
     </script>

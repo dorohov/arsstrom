@@ -1,0 +1,22 @@
+<div class="in-banner">
+    <div class="in-banner__items">
+        @@include('index.banner.item.html', {
+            "bg": "slide1.jpg",
+            "heading": "Товары для сада <br> и огорода",
+            "desc": "Производственное предприятие «Клевер С» с 2006 года <br> производит и реализует товары народного потребления <br> для сада и огорода, хозтовары.",
+            "btn_url": "#",
+            "btn_text": "Подробнее"
+        })
+        @@include('index.banner.item.html', {
+            "bg": "slide2.jpg",
+            "heading": "Товары для сада <br> и огорода2",
+            "desc": "2 Производственное предприятие «Клевер С» с 2006 года <br> производит и реализует товары народного потребления <br> для сада и огорода, хозтовары.",
+            "btn_url": "#",
+            "btn_text": "Подробнее"
+        })
+    </div>
+    <div class="in-banner__arrows">
+        <button class="is--next">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
+        <button class="is--prev">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
+    </div>
+</div>
