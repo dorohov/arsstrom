@@ -1,0 +1,58 @@
+{
+    "sitename": "Арсстром",
+    "phone": "+7 (495) 532-90-69",
+    "phone_link": "tel:84955329069",
+    "email": "info@klever-c.ru",
+    "pages": {
+        "index": "index.html",
+        "about": "about.html",
+        "catalog": "catalog.html",
+        "item": "item.html",
+        "price": "price.html",
+        "delivery": "delivery.html",
+        "contacts": "contacts.html",
+        "error404": "404.html",
+        "article": "article.html",
+        "cabinet": "cabinet.html",
+        "cabinet.login": "cabinet.login.html",
+        "cabinet.register": "cabinet.register.html",
+        "cabinet.forgot": "cabinet.forgot.html",
+        "cabinet.forgot.tw": "cabinet.forgot.tw.html",
+        "cabinet.delivery": "cabinet.delivery.html",
+        "cabinet.password": "cabinet.password.html",
+        "cabinet.basket": "cabinet.basket.html",
+        "cabinet.basket.empty": "cabinet.basket.empty.html"
+    },
+    "menu": [
+        {
+            "title": "Главная",
+            "page": "@@pages.index",
+            "class": ""
+        },
+        {
+            "title": "О компании",
+            "page": "@@pages.about",
+            "class": ""
+        },
+        {
+            "title": "Каталог",
+            "page": "@@pages.catalog",
+            "class": "is--active"
+        },
+        {
+            "title": "Прайс",
+            "page": "@@pages.price",
+            "class": ""
+        },
+        {
+            "title": "Оплата и доставка",
+            "page": "@@pages.delivery",
+            "class": ""
+        },
+        {
+            "title": "Контакты",
+            "page": "@@pages.contacts",
+            "class": ""
+        }
+    ]
+}
