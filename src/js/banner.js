@@ -7,7 +7,8 @@
             nextArrow: '.in-banner__arrows button.is--next',
             fade: true,
             cssEase: 'linear',
-            draggable: false
+            draggable: false,
+            autoplay: true
         })
 
     })

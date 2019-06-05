@@ -8,6 +8,11 @@ body {
             transform: none;
         }
     }
+    &.is--catalog {
+        .catalog__aside {
+            transform: none;
+        }
+    }
 }
 
 *,

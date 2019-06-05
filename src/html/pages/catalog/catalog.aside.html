@@ -1,1 +1,72 @@
-<div class="catalog__aside"></div>
+<div class="catalog__aside">
+    <div class="catalog__aside__close"><button class="btn">Закрыть</button></div>
+    <div class="catalog__aside__heading">Тип</div>
+    <form method="" action="" class="catalog__aside__list">
+        <ul>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type1",
+                    "name": "type",
+                    "value": "1",
+                    "label": "Дачный конструктор"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type2",
+                    "name": "type",
+                    "value": "2",
+                    "label": "Арки садовые"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type3",
+                    "name": "type",
+                    "value": "3",
+                    "label": "Парниковые дуги"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type4",
+                    "name": "type",
+                    "value": "4",
+                    "label": "Шпалеры для растений"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type5",
+                    "name": "type",
+                    "value": "5",
+                    "label": "Декоративные заборчики"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type6",
+                    "name": "type",
+                    "value": "6",
+                    "label": "Опоры для растений"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type7",
+                    "name": "type",
+                    "value": "7",
+                    "label": "Кустодержатели"
+                })
+            </li>
+            <li>
+                @@include('../../items/items.form.checkbox.html', {
+                    "id": "type8",
+                    "name": "type",
+                    "value": "8",
+                    "label": "Изделия из пластика"
+                })
+            </li>
+        </ul>
+    </form>
+</div>

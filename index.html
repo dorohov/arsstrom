@@ -182,11 +182,219 @@
 
                         </div>
                     </div>
-                    <div class="catalog__top__filters"></div>
+                    <div class="catalog__top__filters">
+                        <div class="catalog__top__filters__label">Сортировать по:</div>
+                        <div class="catalog__top__filters__settings">
+                            <div class="catalog__top__filters__settings__block">
+                                <div class="catalog__top__filters__settings__block__label">Цене</div>
+                                <div class="catalog__top__filters__settings__block__arrs">
+                                    <span class="is--top"><svg class="svg-arr_top-dims svg is--arr_top">
+                                            <use xlink:href="img/svg/sprites.svg#arr_top"></use>
+                                        </svg></span>
+                                    <span class="is--down"><svg class="svg-arr_down-dims svg is--arr_down">
+                                            <use xlink:href="img/svg/sprites.svg#arr_down"></use>
+                                        </svg></span>
+                                </div>
+                            </div>
+                            <div class="catalog__top__filters__settings__block is--up">
+                                <div class="catalog__top__filters__settings__block__label">Новизне</div>
+                                <div class="catalog__top__filters__settings__block__arrs">
+                                    <span class="is--top"><svg class="svg-arr_top-dims svg is--arr_top">
+                                            <use xlink:href="img/svg/sprites.svg#arr_top"></use>
+                                        </svg></span>
+                                    <span class="is--down"><svg class="svg-arr_down-dims svg is--arr_down">
+                                            <use xlink:href="img/svg/sprites.svg#arr_down"></use>
+                                        </svg></span>
+                                </div>
+                            </div>
+                            <div class="catalog__top__filters__settings__block is--down">
+                                <div class="catalog__top__filters__settings__block__label">Популярности</div>
+                                <div class="catalog__top__filters__settings__block__arrs">
+                                    <span class="is--top"><svg class="svg-arr_top-dims svg is--arr_top">
+                                            <use xlink:href="img/svg/sprites.svg#arr_top"></use>
+                                        </svg></span>
+                                    <span class="is--down"><svg class="svg-arr_down-dims svg is--arr_down">
+                                            <use xlink:href="img/svg/sprites.svg#arr_down"></use>
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__top__open">
+                        <button class="btn">Категории</button>
+                    </div>
                 </div>
                 <div class="catalog__wrap">
-                    <div class="catalog__aside"></div>
-                    <div class="catalog__list"></div>
+                    <div class="catalog__aside">
+                        <div class="catalog__aside__close"><button class="btn">Закрыть</button></div>
+                        <div class="catalog__aside__heading">Тип</div>
+                        <form method="" action="" class="catalog__aside__list">
+                            <ul>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type1" type="checkbox" name="type" value="1">
+                                        <label for="type1" class="is--block"><span></span></label>
+                                        <label for="type1" class="is--text">Дачный конструктор</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type2" type="checkbox" name="type" value="2">
+                                        <label for="type2" class="is--block"><span></span></label>
+                                        <label for="type2" class="is--text">Арки садовые</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type3" type="checkbox" name="type" value="3">
+                                        <label for="type3" class="is--block"><span></span></label>
+                                        <label for="type3" class="is--text">Парниковые дуги</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type4" type="checkbox" name="type" value="4">
+                                        <label for="type4" class="is--block"><span></span></label>
+                                        <label for="type4" class="is--text">Шпалеры для растений</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type5" type="checkbox" name="type" value="5">
+                                        <label for="type5" class="is--block"><span></span></label>
+                                        <label for="type5" class="is--text">Декоративные заборчики</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type6" type="checkbox" name="type" value="6">
+                                        <label for="type6" class="is--block"><span></span></label>
+                                        <label for="type6" class="is--text">Опоры для растений</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type7" type="checkbox" name="type" value="7">
+                                        <label for="type7" class="is--block"><span></span></label>
+                                        <label for="type7" class="is--text">Кустодержатели</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input id="type8" type="checkbox" name="type" value="8">
+                                        <label for="type8" class="is--block"><span></span></label>
+                                        <label for="type8" class="is--text">Изделия из пластика</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="catalog__list">
+                        <div class="catalog__list__inner">
+                            <div class="catalog__card">
+                                <div class="catalog__card__inner">
+                                    <a href="item.html" class="catalog__card__img">
+                                        <img src="img/item1.png" alt="Арки садовые">
+                                    </a>
+                                    <div class="catalog__card__info">
+                                        <div class="catalog__card__info__art">Артикул: С-14-5</div>
+                                        <div class="catalog__card__info__title"><a href="item.html">Арки садовые</a></div>
+                                        <div class="catalog__card__info__price">590</div>
+                                        <div class="catalog__card__info__btn">
+                                            <span class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                </svg> В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__inner">
+                                    <a href="item.html" class="catalog__card__img">
+                                        <img src="img/item2.png" alt="Шпалеры садовые">
+                                    </a>
+                                    <div class="catalog__card__info">
+                                        <div class="catalog__card__info__art">Артикул: С-14-5</div>
+                                        <div class="catalog__card__info__title"><a href="item.html">Шпалеры садовые</a></div>
+                                        <div class="catalog__card__info__price">590</div>
+                                        <div class="catalog__card__info__btn">
+                                            <span class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                </svg> В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__inner">
+                                    <a href="item.html" class="catalog__card__img">
+                                        <img src="img/item3.png" alt="Металлические заборчики">
+                                    </a>
+                                    <div class="catalog__card__info">
+                                        <div class="catalog__card__info__art">Артикул: С-14-5</div>
+                                        <div class="catalog__card__info__title"><a href="item.html">Металлические заборчики</a></div>
+                                        <div class="catalog__card__info__price">590</div>
+                                        <div class="catalog__card__info__btn">
+                                            <span class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                </svg> В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__inner">
+                                    <a href="item.html" class="catalog__card__img">
+                                        <img src="img/item4.png" alt="Кустодержатели">
+                                    </a>
+                                    <div class="catalog__card__info">
+                                        <div class="catalog__card__info__art">Артикул: С-14-5</div>
+                                        <div class="catalog__card__info__title"><a href="item.html">Кустодержатели</a></div>
+                                        <div class="catalog__card__info__price">590</div>
+                                        <div class="catalog__card__info__btn">
+                                            <span class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                </svg> В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__inner">
+                                    <a href="item.html" class="catalog__card__img">
+                                        <img src="img/item5.png" alt="Подставки для цветов (в две строки)">
+                                    </a>
+                                    <div class="catalog__card__info">
+                                        <div class="catalog__card__info__art">Артикул: С-14-5</div>
+                                        <div class="catalog__card__info__title"><a href="item.html">Подставки для цветов (в две строки)</a></div>
+                                        <div class="catalog__card__info__price">590</div>
+                                        <div class="catalog__card__info__btn">
+                                            <span class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                </svg> В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__inner">
+                                    <a href="item.html" class="catalog__card__img">
+                                        <img src="img/item6.png" alt="Дуги и парники">
+                                    </a>
+                                    <div class="catalog__card__info">
+                                        <div class="catalog__card__info__art">Артикул: С-14-5</div>
+                                        <div class="catalog__card__info__title"><a href="item.html">Дуги и парники</a></div>
+                                        <div class="catalog__card__info__price">590</div>
+                                        <div class="catalog__card__info__btn">
+                                            <span class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                </svg> В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

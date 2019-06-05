@@ -9,7 +9,35 @@
                     "align": "left"
                 })
             </div>
-            <div class="catalog__top__filters"></div>
+            <div class="catalog__top__filters">
+                <div class="catalog__top__filters__label">Сортировать по:</div>
+                <div class="catalog__top__filters__settings">
+                    <div class="catalog__top__filters__settings__block">
+                        <div class="catalog__top__filters__settings__block__label">Цене</div>
+                        <div class="catalog__top__filters__settings__block__arrs">
+                            <span class="is--top">@@include('../../components/components.svg.html', {"name": "arr_top"})</span>
+                            <span class="is--down">@@include('../../components/components.svg.html', {"name": "arr_down"})</span>
+                        </div>
+                    </div>
+                    <div class="catalog__top__filters__settings__block is--up">
+                        <div class="catalog__top__filters__settings__block__label">Новизне</div>
+                        <div class="catalog__top__filters__settings__block__arrs">
+                            <span class="is--top">@@include('../../components/components.svg.html', {"name": "arr_top"})</span>
+                            <span class="is--down">@@include('../../components/components.svg.html', {"name": "arr_down"})</span>
+                        </div>
+                    </div>
+                    <div class="catalog__top__filters__settings__block is--down">
+                        <div class="catalog__top__filters__settings__block__label">Популярности</div>
+                        <div class="catalog__top__filters__settings__block__arrs">
+                            <span class="is--top">@@include('../../components/components.svg.html', {"name": "arr_top"})</span>
+                            <span class="is--down">@@include('../../components/components.svg.html', {"name": "arr_down"})</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__top__open">
+                <button class="btn">Категории</button>
+            </div>
         </div>
         <div class="catalog__wrap">
             @@include('catalog.aside.html')

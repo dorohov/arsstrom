@@ -29,6 +29,7 @@
         function openMobileMenu() {
             $('.navbar__btn button').addClass('is-active')
             $('body').addClass('is--mm')
+            closeCatalogSort()
             openOverlay()
         }
 
@@ -45,9 +46,28 @@
             })
         }
 
+        function openCatalogSort() {
+            $('body').addClass('is--catalog');
+            openOverlay()
+        }
+
+        function closeCatalogSort() {
+            $('body').removeClass('is--catalog');
+            closeOverlay()
+        }
+
         $('#overlay').on('click', function() {
             closeOverlay()
             closeMobileMenu()
+            closeCatalogSort()
+        })
+
+        $('.catalog__top__open button').on('click', function() {
+            openCatalogSort()
+        })
+
+        $('.catalog__aside__close button').on('click', function() {
+            closeCatalogSort()
         })
 
         setBodyPadding()

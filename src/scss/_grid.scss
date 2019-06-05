@@ -39,6 +39,24 @@
         background: transparent;
         color: $orange;
     }
+    &.is--basket {
+        padding: 15px 30px;
+        svg {
+            fill: #fff;
+            width: 17px;
+            height: 17px;
+            transition: .25s all ease;
+            margin-right: 5px;
+        }
+        &:hover {
+            svg {
+                fill: $orange;
+            }
+        }
+        @media (max-width: $resp1200) {
+            padding: 10px 20px;
+        }
+    }
     @media (max-width: $resp1200) {
         padding: 10px 35px;
     }
@@ -47,6 +65,10 @@
 .slide {
     padding-top: 110px;
     padding-bottom: 140px;
+    @media (max-width: $resp1025) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
 }
 
 .heading {
@@ -54,4 +76,7 @@
     color: #1B1B1B;
     font-size: 72px;
     line-height: 92%;
+    @media (max-width: $resp1200) {
+        font-size: 36px;
+    }
 }
