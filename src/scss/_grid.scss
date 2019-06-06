@@ -72,11 +72,19 @@
 }
 
 .heading {
-    font-family: 'BravoSC';
-    color: #1B1B1B;
-    font-size: 72px;
-    line-height: 92%;
-    @media (max-width: $resp1200) {
-        font-size: 36px;
+    margin-bottom: 50px;
+    &__text {
+        font-family: 'BravoSC';
+        color: #1B1B1B;
+        font-size: 72px;
+        line-height: 92%;
+        @media (max-width: $resp1200) {
+            font-size: 36px;
+        }
+    }
+    &__sub {
+        font-size: 18px;
+        color: #1B1B1B;
+        padding-top: 20px;
     }
 }

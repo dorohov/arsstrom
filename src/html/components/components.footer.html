@@ -1,5 +1,31 @@
 <footer class="footer">
-    
+    <div class="footer__inner container">
+        <div class="footer__cop">&copy; 2007-2019  «ООО «Арсстром»</div>
+        <div class="footer__menu">
+            <ul>
+                <li>
+                    <a href="@@phone_link">
+                        <span class="is--icon">@@include('components.svg.html', {"name": "phone"})</span>
+                        @@phone
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:@@email">
+                        <span class="is--icon">@@include('components.svg.html', {"name": "mail"})</span>
+                        @@email
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__dorohov">
+            <a href="#" target="_blank" class="footer__dorohov__inner">
+                <div class="footer__dorohov__text">Сделано в — </div>
+                <div class="footer__dorohov__logo">
+                    @@include('components.svg.html', {"name": "dorohov"})
+                </div>
+            </a>
+        </div>
+    </div>
 </footer>
 @@include('../modals/modal.main.html')
 <div id="overlay"></div>

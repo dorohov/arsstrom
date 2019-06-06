@@ -37,3 +37,93 @@
         }
     }
 }
+
+.form {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="submit"] {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        min-height: 65px;
+        padding-top: 0;
+        padding-bottom: 0;
+        outline: none;
+        transition: .25s all ease;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        padding: 0 15px;
+        border: 5px solid $olive;
+        &:focus {
+            border-color: rgba(18, 50, 8, 0.49);
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__col {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        align-items: flex-end;
+        &.is4 {
+            max-width: 25%;
+        }
+    }
+    &__block {
+        width: 100%;
+        label {
+            display: block;
+            padding-bottom: 15px;
+            color: rgba(18, 50, 8, 0.47);
+            font-size: 18px;
+        }
+        &__input {
+            input {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .form {
+        &__col {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.is4 {
+                max-width: 50%;
+                &.is--submit {
+                    max-width: 100%;
+                }
+                &.is--w100 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .form {
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="submit"] {
+            min-height: 50px;
+        }
+        &__col {
+            margin-bottom: 30px;
+            &.is4 {
+                max-width: 100%;
+            }
+        }
+    }
+}

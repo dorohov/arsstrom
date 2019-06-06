@@ -1,0 +1,119 @@
+.footer {
+    background: $green;
+    padding: 50px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__cop {
+        color: #fff;
+        font-size: 24px;
+    }
+    &__menu {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                padding: 0 80px;
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: .25s all ease;
+                    svg {
+                        fill: #fff;
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    &__dorohov {
+        &__inner {
+            display: flex;
+            align-items: center;
+            &:hover {
+                .footer__dorohov__text {
+                    color: $orange;
+                }
+                .footer__dorohov__logo svg {
+                    fill: $orange;
+                }
+            }
+        }
+        &__text {
+            margin-right: 5px;
+            color: #fff;
+            transition: .25s all ease;
+            font-size: 24px;
+        }
+        &__logo {
+            svg {
+                fill: #fff;
+                transition: .25s all ease;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .footer {
+        &__cop {
+            font-size: 16px;
+        }
+        &__menu {
+            ul {
+                li {
+                    padding: 0 20px;
+                }
+            }
+        }
+        &__dorohov {
+            &__text {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .footer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        &__inner {
+            flex-flow: wrap;
+            flex-wrap: wrap;
+        }
+        &__cop {
+            order: 0;
+        }
+        &__dorohov {
+            order: 2;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__menu {
+            order: 1;
+            max-width: 100%;
+            width: 100%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            ul {
+                flex-wrap: wrap;
+                li {
+                    padding: 0;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

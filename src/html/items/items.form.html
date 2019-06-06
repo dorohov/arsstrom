@@ -1,0 +1,43 @@
+<div class="form slide">
+    <div class="form__inner container">
+        @@include('items.heading.html', {
+            "title": "Каталог продукции",
+            "sub": true,
+            "sub_text": "Вы будете первыми получать информацию обо всех актуальных акциях, будете <br> в курсе всех новых партий поставки и узнаете  о новинках продукции",
+            "align": "left"
+        })
+        <form class="form__wrap">
+            <div class="form__col is4">
+                <div class="form__block">
+                    <label for="f_name">Ваше имя</label>
+                    <div class="form__block__input">
+                        <input type="text" name="name" id="f_name">
+                    </div>
+                </div>
+            </div>
+            <div class="form__col is4">
+                <div class="form__block">
+                    <label for="f_phone">Ваш телефон</label>
+                    <div class="form__block__input">
+                        <input type="text" name="phone" id="f_phone">
+                    </div>
+                </div>
+            </div>
+            <div class="form__col is4 is--w100">
+                <div class="form__block">
+                    <label for="f_email">E-mail адрес</label>
+                    <div class="form__block__input">
+                        <input type="email" name="email" id="f_email">
+                    </div>
+                </div>
+            </div>
+            <div class="form__col is4 is--submit">
+                <div class="form__block">
+                    <div class="form__block__input">
+                        <input type="submit" class="btn" value="Отправить">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
