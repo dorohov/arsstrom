@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Арка садовая разборная комбинированная бордовая — Арсстром</title>
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -137,27 +138,78 @@
         <div class="item">
             <div class="item__inner">
                 <div class="item__left">
-                    <div class="item__left__inner"></div>
+                    <div class="item__left__inner">
+                        <div class="breadcrumbs">
+                            <ul>
+
+                                <li><a href="index.html">Главная</a></li>
+
+                                <li><a href="catalog.html">Каталог</a></li>
+
+                                <li>Арка садовая разборная комбинированная бордовая</li>
+                            </ul>
+                        </div>
+                        <div class="item__left__heading">Арка садовая разборная комбинированная бордовая</div>
+                        <div class="item__left__art">Артикул: С-14-5</div>
+                        <div class="item__left__info">
+                            <div class="item__left__info__col">
+                                <div class="item__left__info__block"><b>Высота: </b>2.3м</div>
+                                <div class="item__left__info__block"><b>Глубина: </b>0.5м</div>
+                                <div class="item__left__info__block"><b>Комплектность в артикуле: </b>2 части низ, 4 части середина,3 части крыша</div>
+                            </div>
+                            <div class="item__left__info__col">
+                                <div class="item__left__info__block"><b>Производитель: </b>Россия</div>
+                                <div class="item__left__info__block"><b>Метал: </b>труба диаметр 16мм,10мм в порытии краска порошковая</div>
+                                <div class="item__left__info__block"><b>Бренд: </b>Клевер С</div>
+                            </div>
+                        </div>
+                        <div class="item__left__buy">
+                            <div class="item__left__buy__price">
+                                <span>590</span>
+                            </div>
+                            <div class="item__left__buy__btn">
+                                <a href="cabinet.basket.html" class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                        <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                    </svg> В корзину</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="item__right">
                     <div class="item__carousel">
                         <div class="item__carousel__items">
                             <div class="item__carousel__item">
-                                <a href="#">
+                                <a href="img/item.png" data-fancybox>
                                     <img src="img/item.png">
                                 </a>
                             </div>
-                        </div>
-                        <div class="item__carousel__controls">
-                            <button class="is--next"><svg class="svg-arrow-dims svg is--arrow">
-                                    <use xlink:href="img/svg/sprites.svg#arrow"></use>
-                                </svg></button>
-                            <button class="is--prev"><svg class="svg-arrow-dims svg is--arrow">
-                                    <use xlink:href="img/svg/sprites.svg#arrow"></use>
-                                </svg></button>
+                            <div class="item__carousel__item">
+                                <a href="img/item2.png" data-fancybox>
+                                    <img src="img/item2.png">
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="item__carousel__controls">
+                        <button class="is--next"><svg class="svg-arrow-dims svg is--arrow">
+                                <use xlink:href="img/svg/sprites.svg#arrow"></use>
+                            </svg></button>
+                        <button class="is--prev"><svg class="svg-arrow-dims svg is--arrow">
+                                <use xlink:href="img/svg/sprites.svg#arrow"></use>
+                            </svg></button>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="ccarousel slide">
+            <div class="ccarousel__inner container">
+                <div class="ccarousel__heading">
+                    <div class="heading is--left">
+                        <div class="heading__text">Сопутствующие товары</div>
+
+                    </div>
+                </div>
+                <div class="ccarousel__list"></div>
             </div>
         </div>
     </main>
@@ -199,11 +251,12 @@
     <!-- modal form -->
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/jquery.fancybox.min.js"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
     <script src="dist/js/parsley.min.js"></script>
     <script src="dist/js/i18n/ru.js"></script>
     <script src="dist/js/slick.min.js"></script>
+    <script src="dist/js/main.js"></script>
     <script>
         svg4everybody();
     </script>

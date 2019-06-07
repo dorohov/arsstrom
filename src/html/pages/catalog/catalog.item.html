@@ -1,22 +1,66 @@
 <div class="item">
     <div class="item__inner">
         <div class="item__left">
-            <div class="item__left__inner"></div>
+            <div class="item__left__inner">
+                @@include('../../items/items.breadcrumbs.html', {
+                    "list": [
+                        {
+                            "url": "@@pages.index",
+                            "title": "Главная"
+                        },
+                        {
+                            "url": "@@pages.catalog",
+                            "title": "Каталог"
+                        }
+                    ],
+                    "current": "Арка садовая разборная комбинированная бордовая"
+                })
+                <div class="item__left__heading">Арка садовая разборная комбинированная бордовая</div>
+                <div class="item__left__art">Артикул: С-14-5</div>
+                <div class="item__left__info">
+                    <div class="item__left__info__col">
+                        <div class="item__left__info__block"><b>Высота: </b>2.3м</div>
+                        <div class="item__left__info__block"><b>Глубина: </b>0.5м</div>
+                        <div class="item__left__info__block"><b>Комплектность в артикуле: </b>2 части низ, 4 части середина,3 части крыша</div>
+                    </div>
+                    <div class="item__left__info__col">
+                        <div class="item__left__info__block"><b>Производитель: </b>Россия</div>
+                        <div class="item__left__info__block"><b>Метал: </b>труба диаметр 16мм,10мм в порытии краска порошковая</div>
+                        <div class="item__left__info__block"><b>Бренд: </b>Клевер С</div>
+                    </div>
+                </div>
+                <div class="item__left__buy">
+                    <div class="item__left__buy__price">
+                        <span>590</span>
+                    </div>
+                    <div class="item__left__buy__btn">
+                        <a href="@@pages.cabinet.basket" class="btn is--basket">@@include('../../components/components.svg.html', {"name": "cart"}) В корзину</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="item__right">
             <div class="item__carousel">
                 <div class="item__carousel__items">
                     <div class="item__carousel__item">
-                        <a href="#">
+                        <a href="img/item.png" data-fancybox>
                             <img src="img/item.png">
                         </a>
                     </div>
+                    <div class="item__carousel__item">
+                        <a href="img/item2.png" data-fancybox>
+                            <img src="img/item2.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="item__carousel__controls">
-                    <button class="is--next">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
-                    <button class="is--prev">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
-                </div>
+            </div>
+            <div class="item__carousel__controls">
+                <button class="is--next">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
+                <button class="is--prev">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
             </div>
         </div>
     </div>
 </div>
+@@include('catalog.carousel.html', {
+    "title": "Сопутствующие товары"
+})

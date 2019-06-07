@@ -18,6 +18,11 @@
             draggable: false,
             autoplay: true
         })
-
+        $('.item__carousel__items').slick({
+            prevArrow: '.item__carousel__controls button.is--prev',
+            nextArrow: '.item__carousel__controls button.is--next',
+            draggable: false,
+            adaptiveHeight: true
+        })
     })
 })(jQuery);
