@@ -1,0 +1,44 @@
+<div class="page">
+    <div class="container">
+        <div class="content is--full">
+            @@include('../../items/items.breadcrumbs.html', {
+                "list": [
+                    {
+                        "url": "@@pages.index",
+                        "title": "Главная"
+                    }
+                ],
+                "current": "О компании"
+            })
+            <div class="about">
+                <div class="about__inner">
+                    <div class="about__left">
+                        <h1 class="content__heading">О компании</h1>
+                        <p>Интернет-магазин товаров для сада и огорода, дачи и загородного дома Garden-Zoo.ru был создан в 2013 году, на базе оптово-розничного склада «Зеленый Дом» в городе Пенза.</p>
+                        <p>С тех пор мы получили тысячи заказов от клиентов из разных уголков страны, от Сочи до Якутска, и от Крыма до Владивостока. Многие покупатели становятся нашими постоянными клиентами и оставляют отзывы о нашей работе в разделе «Отзывы».</p>
+                        <p>Мы гарантируем качество и своевременность поставок. Имеем многолетний опыт работы с федеральными сетями (ОБИ, МАКСИДОМ, БАУЦЕНТР, СТРОЙ-ДЕПО и др.)</p>
+                        <p>Предприятие КЛЕВЕР-С серьезно относится к каждому клиенту и стремится к взаимовыгодному сотрудничеству.</p>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__carousel">
+                            <div class="about__carousel__items">
+                                <div class="about__carousel__item">
+                                    <img src="img/about_s1.jpg" alt="">
+                                </div>
+                                <div class="about__carousel__item">
+                                    <img src="img/about_s2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="about__carousel__controls">
+                                <button class="is--next">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
+                                <button class="is--prev">@@include('../../components/components.svg.html', {"name": "arrow"})</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../index/index.advantages.html')
+@@include('../../items/items.form.html')

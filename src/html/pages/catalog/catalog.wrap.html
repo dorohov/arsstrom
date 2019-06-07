@@ -1,5 +1,11 @@
-<div class="catalog slide">
+@@if(parent == false) {
+    <div class="catalog">
+    <div class="catalog__inner">
+}
+@@if(parent == true) {
+    <div class="catalog slide">
     <div class="catalog__inner container">
+}
         <div class="catalog__top">
             <div class="catalog__top__heading">
                 @@include('../../items/items.heading.html', {
@@ -41,7 +47,7 @@
         </div>
         <div class="catalog__wrap">
             @@include('catalog.aside.html')
-            @@include('catalog.list.html', {"bread": "@@bread"})
+            @@include('catalog.list.html', {"pagination": @@pagination})
         </div>
     </div>
 </div>

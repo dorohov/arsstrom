@@ -1,0 +1,20 @@
+<div class="page">
+    <div class="container">
+        <div class="content is--full">
+            @@include('../../items/items.breadcrumbs.html', {
+                "list": [
+                    {
+                        "url": "@@pages.index",
+                        "title": "Главная"
+                    }
+                ],
+                "current": "Каталог"
+            })
+            @@include('../catalog/catalog.wrap.html', {
+                "pagination": true,
+                "title": "Каталог продукции",
+                "parent": false
+            })
+        </div>
+    </div>
+</div>

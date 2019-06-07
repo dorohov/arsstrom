@@ -45,3 +45,87 @@ img {
 .slick-slide {
     outline: none;
 }
+
+.content {
+    max-width: 1020px;
+    width: 100%;
+    &.is--full {
+        max-width: 100%;
+    }
+    &__heading {
+        font-size: 72px !important;
+        margin-bottom: 30px !important;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        color: #1B1B1B;
+        font-family: 'BravoSC';
+        margin: 0 0 20px 0;
+        line-height: 92%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    h1 {font-size: 48px;}
+    h2 {font-size: 36px;}
+    h3 {font-size: 24px;}
+    h4 {font-size: 18px;}
+    h5 {font-size: 16px;}
+    h6 {font-size: 14px;}
+    p {
+        font-size: 18px;
+        line-height: 118%;
+        color: #1B1B1B;
+        margin: 0 0 25px 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .parsgroup {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    ul.list {
+        margin-bottom: 30px;
+        li {
+            font-size: 18px;
+            line-height: 100%;
+            color: #1B1B1B;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 2px;
+                background: $lime;
+            }
+        }
+    }
+    @media (max-width: $resp768) {
+        &__heading {
+            font-size: 48px !important;
+        }
+        p, ul li {
+            font-size: 16px;
+        }
+        ul.list li {
+            padding-left: 20px;
+            &::before {
+                width: 10px;
+                height: 10px;
+                top: 3px;
+            }
+        }
+    }
+}

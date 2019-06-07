@@ -10,6 +10,14 @@
             draggable: false,
             autoplay: true
         })
+        $('.about__carousel__items').slick({
+            prevArrow: '.about__carousel__controls button.is--prev',
+            nextArrow: '.about__carousel__controls button.is--next',
+            fade: true,
+            cssEase: 'linear',
+            draggable: false,
+            autoplay: true
+        })
 
     })
 })(jQuery);
