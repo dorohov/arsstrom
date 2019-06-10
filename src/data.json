@@ -20,8 +20,8 @@
         "cabinet.forgot.tw": "cabinet.forgot.tw.html",
         "cabinet.delivery": "cabinet.delivery.html",
         "cabinet.password": "cabinet.password.html",
-        "cabinet.basket": "cabinet.basket.html",
-        "cabinet.basket.empty": "cabinet.basket.empty.html"
+        "basket": "basket.html",
+        "basket.empty": "basket.empty.html"
     },
     "menu": [
         {

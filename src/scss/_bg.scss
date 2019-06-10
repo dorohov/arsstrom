@@ -1,0 +1,12 @@
+.is--bg {
+    background-repeat: no-repeat;
+    &.bg {
+        &__login-page {
+            background-image: url(../../img/bg_login.png);
+            background-position: left bottom;
+        }
+    }
+    @media (max-width: $resp768) {
+        background-image: none !important;
+    }
+}

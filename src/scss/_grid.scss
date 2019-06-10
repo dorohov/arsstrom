@@ -80,6 +80,17 @@
     }
 }
 
+.cab {
+    padding: 130px 0 210px 0;
+    .heading__text {
+        text-transform: uppercase;
+    }
+    @media (max-width: $resp1025) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}
+
 .heading {
     margin-bottom: 50px;
     &__text {
@@ -95,5 +106,8 @@
         font-size: 18px;
         color: #1B1B1B;
         padding-top: 20px;
+    }
+    &.is--center {
+        text-align: center;
     }
 }

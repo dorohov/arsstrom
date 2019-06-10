@@ -1,0 +1,21 @@
+<div class="user">
+    <div class="user__menu">
+        <div class="user__menu__heading">
+            @@include('../../items/items.heading.html', {
+                "title": "@@heading",
+                "sub": false,
+                "sub_text": "",
+                "align": "center"
+            })
+        </div>
+        <div class="user__menu__items">
+            <ul>
+                @@for(var i = 0; i < list.length; i++) {
+                    <li>
+                        <`+list[i].tag1+`>`+list[i].title+`</`+list[i].tag2+`>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

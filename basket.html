@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Статья — Арсстром</title>
+    <title>(1) Корзина — Арсстром</title>
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -135,43 +135,65 @@
         </div>
     </div>
     <main>
-        <div class="page">
+        <div class="cab">
             <div class="container">
-                <div class="content">
-                    <div class="breadcrumbs">
-                        <ul>
+                <div class="content is--full">
+                    <div class="heading is--center">
+                        <div class="heading__text">Оформить заказ</div>
 
-                            <li><a href="index.html">Главная</a></li>
-
-                            <li>Статья</li>
-                        </ul>
                     </div>
-                    <h1 class="content__heading">Заголовок статьи</h1>
-                    <h1>Заголовок .h1</h1>
-                    <h2>Заголовок .h2</h2>
-                    <h3>Заголовок .h3</h3>
-                    <h4>Заголовок .h4</h4>
-                    <h5>Заголовок .h5</h5>
-                    <h6>Заголовок .h6</h6>
-                    <div class="parsgroup">
-                        <p>Верлибр иллюстрирует мелодический амфибрахий, при этом нельзя говорить, что это явления собственно фоники, звукописи. Абстрактное высказывание,
-                            по определению представляет собой абстракционизм – это уже пятая стадия понимания по М.Бахтину. Эпическая медлительность изящно отталкивает коммунальный модернизм. Структура, не учитывая количества слогов, стоящих между ударениями, возможна. Обычная литература, перенесенная в Сеть,
-                            не является "сетературой" в смысле отдельного жанра, однако тоника диссонирует словесный диалогический контекст.</p>
-                        <p>
-                            Замысел неоднороден по составу. Субъективное восприятие, несмотря на то, что все эти характерологические черты отсылают не к единому
-                            образу нарратора, вызывает словесный цикл. Синхрония притягивает культурный речевой акт.</p>
-                        <p>Если параграф один, то пишется просто тег &lt;p&gt;. Если параграфов несколько, и далее например идет список, как в данном случае, эти параграфы заносятся в родительский контейнер &lt;div class="parsgroup"&gt;&lt;p&gt;1&lt;/p&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;</p>
+                    <div class="basket">
+                        <form class="basket__inner">
+                            <div class="basket__table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование продукта</th>
+                                            <th>Цена</th>
+                                            <th>Количество</th>
+                                            <th>Стоимость</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Наименование"><a href="#">Арка садовая</a></td>
+                                            <td data-title="Цена"><span class="is--ruble">547</span></td>
+                                            <td data-title="Количество">
+                                                <div class="counter">
+                                                    <div class="counter__btn">
+                                                        <button type="button" class="is--minus"><svg class="svg-minus-dims svg is--minus">
+                                                                <use xlink:href="img/svg/sprites.svg#minus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                    <div class="counter__field"><input type="number" value="1" max="9999" min="1"></div>
+                                                    <div class="counter__btn">
+                                                        <button type="button" class="is--plus"><svg class="svg-plus-dims svg is--plus">
+                                                                <use xlink:href="img/svg/sprites.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-title="Стоимость"><span class="is--ruble">547</span></td>
+                                            <td data-title="Действия"><a href="#" class="is--delete"><svg class="svg-busket-dims svg is--busket">
+                                                        <use xlink:href="img/svg/sprites.svg#busket"></use>
+                                                    </svg></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="basket__footer">
+                                <div class="basket__footer__left">
+                                    <div class="basket__footer__price">
+                                        Итого: <span>547</span>
+                                    </div>
+                                </div>
+                                <div class="basket__footer__right">
+                                    <a href="#" class="btn">Оплатить заказ</a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <ul class="list">
-                        <li>Интернет-магазин товаров для сада и огорода, дачи и загородного дома Garden-Zoo.ru</li>
-                        <li>Интернет-магазин товаров для сада и огорода, дачи и загородного дома Garden-Zoo.ru</li>
-                        <li>Интернет-магазин товаров для сада и огорода, дачи и загородного дома Garden-Zoo.ru</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis consequuntur soluta sed eaque ipsam ea dolorem ab! Totam esse incidunt, aspernatur, veritatis quasi accusamus minus possimus ullam minima ea debitis, qui nulla in magni ut ipsam repellendus sed eum non impedit quaerat. Exercitationem laborum alias debitis, accusamus dicta ab?</li>
-                    </ul>
-                    <p>Олицетворение последовательно. Впечатление, чтобы уловить хореический ритм или аллитерацию на "л", текстологически представляет собой верлибр.
-                        Похоже, что самого Бахтина удивила эта всеобщая порабощенность тайной "чужого" слова, тем не менее амфибрахий аннигилирует дольник. Тавтология интегрирует одиннадцатисложник. Стиль, не учитывая количества слогов, стоящих между ударениями, приводит урбанистический ритм. Возможно,
-                        что сходство Гугона и Микулы объясняется родством бродячих мотивов, однако ударение диссонирует механизм сочленений, хотя по данному примеру
-                        нельзя судить об авторских оценках.</p>
                 </div>
             </div>
         </div>

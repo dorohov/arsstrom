@@ -74,6 +74,9 @@
         &.is4 {
             max-width: 25%;
         }
+        &.is3 {
+            max-width: 33.33333%;
+        }
     }
     &__block {
         width: 100%;
@@ -107,6 +110,15 @@
                     max-width: 100%;
                 }
             }
+            &.is3 {
+                max-width: 50%;
+                &.is--submit {
+                    max-width: 100%;
+                }
+                &.is--w100 {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }
@@ -122,6 +134,9 @@
         &__col {
             margin-bottom: 30px;
             &.is4 {
+                max-width: 100%;
+            }
+            &.is3 {
                 max-width: 100%;
             }
         }

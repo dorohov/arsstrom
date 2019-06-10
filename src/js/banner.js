@@ -24,5 +24,33 @@
             draggable: false,
             adaptiveHeight: true
         })
+        $('.ccarousel__list').slick({
+            prevArrow: '.ccarousel__controls button.is--prev',
+            nextArrow: '.ccarousel__controls button.is--next',
+            draggable: false,
+            slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 530,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: true,
+                        adaptiveHeight: true
+                    }
+                }
+            ]
+        })
     })
 })(jQuery);

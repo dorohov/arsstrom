@@ -1,0 +1,43 @@
+<div class="cab">
+    <div class="container">
+        <div class="content is--full">
+            @@include('../../items/items.heading.html', {
+                "title": "Оформить заказ",
+                "sub": false,
+                "sub_text": "",
+                "align": "center"
+            })
+            <div class="basket">
+                <form class="basket__inner">
+                    <div class="basket__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Наименование продукта</th>
+                                    <th>Цена</th>
+                                    <th>Количество</th>
+                                    <th>Стоимость</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="is--empty">В корзине пока нет товаров</td>
+                                    <td class="is--hide"></td>
+                                    <td class="is--hide"></td>
+                                    <td class="is--hide"></td>
+                                    <td class="is--hide"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="basket__footer">
+                        <div class="basket__footer__left">
+                            <a href="@@pages.catalog" class="btn">Перейти в каталог</a>
+                        </div>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+</div>

@@ -475,6 +475,178 @@
     }
 }
 
+.ccarousel {
+    &__inner {
+        position: relative;
+        max-width: 1700px;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    &__controls {
+        button {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            border: none;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+            top: 50%;
+            // margin-top: -25px;
+            svg {
+                fill: $orange;
+            }
+            &.is--prev {
+                left: 10px;
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+            &.is--next {
+                right: 10px;
+            }
+        }
+    }
+}
+
+.basket {
+    &__table {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            text-align: left;
+            thead {
+                background: $lime;
+                tr {
+                    th {
+                        padding: 40px 70px;
+                        font-size: 24px;
+                        color: #1B1B1B;
+                        font-weight: normal;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        padding: 30px 70px;
+                        border-bottom: 1px solid $green;
+                        font-size: 18px;
+                        color: #1B1B1B;
+                        a {
+                            color: #1B1B1B;
+                            &:hover {
+                                color: $orange;
+                            }
+                        }
+                        .is--delete {
+                            svg {
+                                fill: $green;
+                                transition: .25s all ease;
+                                &:hover {
+                                    fill: $orange;
+                                }
+                            }
+                        }
+                        .is--ruble {
+                            display: inline-block;
+                            padding-right: 15px;
+                            position: relative;
+                            line-height: 70%;
+                            &::after {
+                                content: '';
+                                background: url(../../img/svg/ruble.svg);
+                                width: 11px;
+                                height: 13px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                            }
+                        }
+                        &.is--empty {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__footer {
+        padding: 65px 0 0 70px;
+        display: flex;
+        align-items: center;
+        &__left {
+            margin-right: auto;
+        }
+        &__right {
+            margin-left: auto;
+        }
+        &__price {
+            font-size: 24px;
+            font-weight: bold;
+            vertical-align: bottom;
+            span {
+                display: inline-block;
+                font-weight: normal;
+                font-size: 36px;
+                padding-right: 25px;
+                position: relative;
+                line-height: 80%;
+                &::after {
+                    content: '';
+                    background: url(../../img/svg/ruble.svg);
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.user {
+    &__menu {
+        margin-bottom: 80px;
+        &__heading {
+            margin-bottom: 30px;
+            .heading {
+                margin-bottom: 0;
+            }
+        }
+        &__items {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 0 20px;
+                    a,
+                    span {
+                        color: #1B1B1B;
+                        font-size: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1440px) {
     .catalog {
         &__card {
@@ -515,6 +687,29 @@
             min-width: 560px;
             width: 560px;
             padding-left: 20px;
+        }
+    }
+    .basket {
+        &__table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            padding: 30px 40px;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 20px 40px
+                        }
+                    }
+                }
+            }
+        }
+        &__footer {
+            padding-left: 40px;
         }
     }
 }
@@ -656,6 +851,19 @@
             }
         }
     }
+    .basket {
+        &__table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $resp1025) {
@@ -665,6 +873,58 @@
                 &__col {
                     max-width: 100%;
                 }
+            }
+        }
+    }
+    .basket {
+        &__table {
+            table {
+                thead {
+                    display: none;
+                }
+                tbody {
+                    display: block;
+                    tr {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid $green;
+                        td {
+                            width: 100% ;
+                            max-width: 100%;
+                            display: block;
+                            border: none;
+                            position: relative;
+                            padding: 10px;
+                            text-align: left;
+                            &::before {
+                                content: attr(data-title);
+                                color: $orange;
+                                display: block;
+                                margin-bottom: 10px;
+                            }
+                            &:first-child {
+                                padding: 0 10px 0 10px !important; 
+                            }
+                            &.is--hide {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__footer {
+            flex-wrap: wrap;
+            padding: 20px 0 0 0;
+            &__left {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            &__right {
+                margin-left: 0;
             }
         }
     }
@@ -836,6 +1096,35 @@
                     width: 55px;
                     height: 55px;
                     margin-top: -27px;
+                }
+            }
+        }
+    }
+    .ccarousel {
+        &__inner {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__controls {
+            display: none;
+        }
+    }
+    .user {
+        &__menu {
+            margin-bottom: 30px;
+            ul {
+                flex-wrap: wrap;
+                li {
+                    max-width: 100%;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+                    span,
+                    a {
+                        font-size: 18px;
+                        display: block;
+                        padding: 5px 0;
+                    }
                 }
             }
         }
