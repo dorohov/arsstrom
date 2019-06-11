@@ -93,6 +93,18 @@ img {
             margin-bottom: 0;
         }
     }
+    ol {
+        font-size: 18px;
+        color: #1B1B1B;
+        margin: 0 0 25px 0;
+        padding-left: 20px;
+        li {
+            margin-bottom: 15px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     .parsgroup {
         margin-bottom: 50px;
         &:last-child {
@@ -139,6 +151,47 @@ img {
                 height: 10px;
                 top: 3px;
             }
+        }
+    }
+}
+
+.pt0 {
+    padding-top: 0 !important;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.mb15 {
+    margin-bottom: 15px !important;
+}
+
+.doc {
+    margin-bottom: 30px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        &:hover {
+            .doc {
+                &__text {
+                    color: $orange;
+                }
+            }
+        }
+    }
+    &__icon {
+        margin-right: 15px;
+        svg {
+            fill: $orange;
+        }
+    }
+    &__text {
+        color: #1B1B1B;
+        font-size: 18px;
+        transition: .25s all ease;
+        span {
+            display: block;
         }
     }
 }

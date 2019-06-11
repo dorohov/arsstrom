@@ -5,6 +5,27 @@
             background-image: url(../../img/bg_login.png);
             background-position: left bottom;
         }
+        &__register-page {
+            background-image: url(../../img/bg_register.png);
+            background-position: right 8%;
+        }
+        &__forgot-one-page {
+            background-image: url(../../img/bg_forgot1.png);
+            background-size: cover;
+        }
+        &__forgot-two-page {
+            background-image: url(../../img/bg_forgot2.png);
+            background-size: cover;
+        }
+        &__cabinet-page {
+            background-image: url(../../img/bg_cabinet.png);
+            background-position: bottom right;
+        }
+        &__price-page {
+            background-image: url(../../img/price.png);
+            background-position: bottom right;
+            background-size: 40%;
+        }
     }
     @media (max-width: $resp768) {
         background-image: none !important;

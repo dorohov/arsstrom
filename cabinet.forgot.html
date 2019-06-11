@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Регистрация — Арсстром</title>
+    <title>Восстановление пароля — Арсстром</title>
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -135,14 +135,14 @@
         </div>
     </div>
     <main>
-        <div class="cab is--bg bg__register-page">
+        <div class="cab is--bg bg__forgot-one-page">
             <div class="container">
                 <div class="content is--full">
                     <div class="user">
                         <div class="user__menu">
                             <div class="user__menu__heading">
                                 <div class="heading is--center">
-                                    <div class="heading__text">Регистрация</div>
+                                    <div class="heading__text">Восстановление пароля</div>
 
                                 </div>
                             </div>
@@ -154,11 +154,11 @@
                                     </li>
 
                                     <li>
-                                        <span>Зарегистрироваться</span>
+                                        <a href='cabinet.register.html'>Зарегистрироваться</a>
                                     </li>
 
                                     <li>
-                                        <a href='cabinet.forgot.html'>Забыли пароль?</a>
+                                        <span>Забыли пароль?</span>
                                     </li>
 
                                 </ul>
@@ -166,8 +166,8 @@
                         </div>
                     </div>
                     <div class="user__form form">
-                        <form class="form__wrap">
-                            <div class="form__col is3 is--w100">
+                        <form class="form__wrap is--block">
+                            <div class="form__col iscenter is3 ism0a is--w100 pt0 mb30">
                                 <div class="form__block">
                                     <label for="f_email">Ваше e-mail</label>
                                     <div class="form__block__input">
@@ -175,30 +175,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form__col is3">
+                            <div class="form__col iscenter is3 ism0a is--w100 pt0">
                                 <div class="form__block">
-                                    <label for="f_password">Ваш пароль</label>
                                     <div class="form__block__input">
-                                        <input type="password" name="f_password" id="f_password" required>
+                                        <input type="submit" class="btn" value="отправить">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="form__col is3">
-                                <div class="form__block">
-                                    <label for="f_password_re">Подтвердите пароль</label>
-                                    <div class="form__block__input">
-                                        <input type="password" name="f_password_re" id="f_password_re" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form__col iscenter is3 ism0a is--w100">
-                                <div class="form__block">
-                                    <div class="checkbox">
-                                        <input id="type2" type="checkbox" name="type" value="2">
-                                        <label for="type2" class="is--block"><span></span></label>
-                                        <label for="type2" class="is--text">Нажимая на кнопку, Вы соглашаетесь с политикой <a href='#'>обработки персональных данных</a></label>
-                                    </div>
-                                    <input type="submit" class="btn" value="Зарегистрироваться">
                                 </div>
                             </div>
                         </form>

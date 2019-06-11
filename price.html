@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Регистрация — Арсстром</title>
+    <title>Прайс — Арсстром</title>
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -135,75 +135,87 @@
         </div>
     </div>
     <main>
-        <div class="cab is--bg bg__register-page">
+        <div class="page is--bg bg__price-page">
             <div class="container">
                 <div class="content is--full">
-                    <div class="user">
-                        <div class="user__menu">
-                            <div class="user__menu__heading">
-                                <div class="heading is--center">
-                                    <div class="heading__text">Регистрация</div>
+                    <div class="breadcrumbs">
+                        <ul>
 
+                            <li><a href="index.html">Главная</a></li>
+
+                            <li>Прайс</li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <div class="price__inner">
+                            <div class="price__left">
+                                <h1 class="content__heading">Прайс</h1>
+                                <p><b>Уважаемые партнеры и гости сайта!</b></p>
+                                <p>Обращаем Ваше внимание, что на сайте представлен новый отптовый прайс - лист, не являющийся офертой. В связи с колебанием цен на сырье. возможно изменение цен на продукцию.</p>
+                                <div class="doc">
+                                    <a href="#" class="doc__inner">
+                                        <div class="doc__icon">
+                                            <svg class="svg-doc-dims svg is--doc">
+                                                <use xlink:href="img/svg/sprites.svg#doc"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="doc__text"><span>Скачать</span> прайс - лист</div>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="user__menu__items">
-                                <ul>
-
-                                    <li>
-                                        <a href='cabinet.login.html'>Вход</a>
-                                    </li>
-
-                                    <li>
-                                        <span>Зарегистрироваться</span>
-                                    </li>
-
-                                    <li>
-                                        <a href='cabinet.forgot.html'>Забыли пароль?</a>
-                                    </li>
-
-                                </ul>
+                                <p>Каждый обратившийся к нам клиент имеет право на персональное ценовое предложение или скидку. Размер скидки зависит от:</p>
+                                <ol>
+                                    <li>Объема закупаемой продукции;</li>
+                                    <li>Сезона на момент покупки;</li>
+                                    <li>Цен на сырье;</li>
+                                    <li>Сложившихся деловых отношений;</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
-                    <div class="user__form form">
-                        <form class="form__wrap">
-                            <div class="form__col is3 is--w100">
-                                <div class="form__block">
-                                    <label for="f_email">Ваше e-mail</label>
-                                    <div class="form__block__input">
-                                        <input type="email" name="f_email" id="f_email" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form__col is3">
-                                <div class="form__block">
-                                    <label for="f_password">Ваш пароль</label>
-                                    <div class="form__block__input">
-                                        <input type="password" name="f_password" id="f_password" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form__col is3">
-                                <div class="form__block">
-                                    <label for="f_password_re">Подтвердите пароль</label>
-                                    <div class="form__block__input">
-                                        <input type="password" name="f_password_re" id="f_password_re" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form__col iscenter is3 ism0a is--w100">
-                                <div class="form__block">
-                                    <div class="checkbox">
-                                        <input id="type2" type="checkbox" name="type" value="2">
-                                        <label for="type2" class="is--block"><span></span></label>
-                                        <label for="type2" class="is--text">Нажимая на кнопку, Вы соглашаетесь с политикой <a href='#'>обработки персональных данных</a></label>
-                                    </div>
-                                    <input type="submit" class="btn" value="Зарегистрироваться">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="form slide is--lime">
+            <div class="form__inner container">
+                <div class="heading is--left">
+                    <div class="heading__text">Подписаться на рассылку </div>
+
+                    <div class="heading__sub">Вы будете первыми получать информацию обо всех актуальных акциях, будете <br> в курсе всех новых партий поставки и узнаете о новинках продукции</div>
+
+                </div>
+                <form class="form__wrap">
+                    <div class="form__col is4">
+                        <div class="form__block">
+                            <label for="f_name">Ваше имя</label>
+                            <div class="form__block__input">
+                                <input type="text" name="name" id="f_name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__col is4">
+                        <div class="form__block">
+                            <label for="f_phone">Ваш телефон</label>
+                            <div class="form__block__input">
+                                <input type="text" name="phone" id="f_phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__col is4 is--w100">
+                        <div class="form__block">
+                            <label for="f_email">E-mail адрес</label>
+                            <div class="form__block__input">
+                                <input type="email" name="email" id="f_email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__col is4 is--submit">
+                        <div class="form__block">
+                            <div class="form__block__input">
+                                <input type="submit" class="btn" value="Отправить">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>

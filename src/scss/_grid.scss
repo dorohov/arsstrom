@@ -60,6 +60,18 @@
     @media (max-width: $resp1200) {
         padding: 10px 35px;
     }
+    &.is--block {
+        display: block;
+        width: 100%;
+    }
+    &.is--inverse {
+        color: #1B1B1B;
+        background: transparent;
+        &:hover {
+            background: $orange;
+            color: #fff;
+        }
+    }
 }
 
 .slide {

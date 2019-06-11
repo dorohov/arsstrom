@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Регистрация — Арсстром</title>
+    <title>Личный кабинет — Арсстром</title>
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -135,14 +135,14 @@
         </div>
     </div>
     <main>
-        <div class="cab is--bg bg__register-page">
+        <div class="cab is--bg bg__cabinet-page">
             <div class="container">
                 <div class="content is--full">
                     <div class="user">
                         <div class="user__menu">
                             <div class="user__menu__heading">
                                 <div class="heading is--center">
-                                    <div class="heading__text">Регистрация</div>
+                                    <div class="heading__text">Личный кабинет — begalm@bk.ru</div>
 
                                 </div>
                             </div>
@@ -150,15 +150,15 @@
                                 <ul>
 
                                     <li>
-                                        <a href='cabinet.login.html'>Вход</a>
+                                        <span>Личные данные</span>
                                     </li>
 
                                     <li>
-                                        <span>Зарегистрироваться</span>
+                                        <a href='cabinet.delivery.html'>Параметры доставки</a>
                                     </li>
 
                                     <li>
-                                        <a href='cabinet.forgot.html'>Забыли пароль?</a>
+                                        <a href='cabinet.password.html'>Изменение пароля</a>
                                     </li>
 
                                 </ul>
@@ -169,36 +169,40 @@
                         <form class="form__wrap">
                             <div class="form__col is3 is--w100">
                                 <div class="form__block">
-                                    <label for="f_email">Ваше e-mail</label>
+                                    <label for="f_name">Имя клиента</label>
                                     <div class="form__block__input">
-                                        <input type="email" name="f_email" id="f_email" required>
+                                        <input type="text" name="f_name" id="f_name" required value="User1996">
                                     </div>
                                 </div>
                             </div>
                             <div class="form__col is3">
                                 <div class="form__block">
-                                    <label for="f_password">Ваш пароль</label>
+                                    <label for="f_email">E-mail</label>
                                     <div class="form__block__input">
-                                        <input type="password" name="f_password" id="f_password" required>
+                                        <input type="email" name="f_email" id="f_email" required value="begalm@bk.ru">
                                     </div>
                                 </div>
                             </div>
                             <div class="form__col is3">
                                 <div class="form__block">
-                                    <label for="f_password_re">Подтвердите пароль</label>
+                                    <label for="f_phone">Номер телефона</label>
                                     <div class="form__block__input">
-                                        <input type="password" name="f_password_re" id="f_password_re" required>
+                                        <input type="text" name="f_phone" id="f_phone" required value="+7 (967) 765 - 89 - 97">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form__col iscenter is3 ism0a is--w100">
+                            <div class="form__col is4 iscenter ism000a mb15">
                                 <div class="form__block">
-                                    <div class="checkbox">
-                                        <input id="type2" type="checkbox" name="type" value="2">
-                                        <label for="type2" class="is--block"><span></span></label>
-                                        <label for="type2" class="is--text">Нажимая на кнопку, Вы соглашаетесь с политикой <a href='#'>обработки персональных данных</a></label>
+                                    <div class="form__block__input">
+                                        <button class="btn is--block">сохранить</button>
                                     </div>
-                                    <input type="submit" class="btn" value="Зарегистрироваться">
+                                </div>
+                            </div>
+                            <div class="form__col is4 iscenter ism0a00 mb15">
+                                <div class="form__block">
+                                    <div class="form__block__input">
+                                        <button class="btn is--inverse is--block">выйти</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>

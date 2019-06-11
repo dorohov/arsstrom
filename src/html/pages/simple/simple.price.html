@@ -1,0 +1,43 @@
+<div class="page is--bg bg__price-page">
+    <div class="container">
+        <div class="content is--full">
+            @@include('../../items/items.breadcrumbs.html', {
+                "list": [
+                    {
+                        "url": "@@pages.index",
+                        "title": "Главная"
+                    }
+                ],
+                "current": "Прайс"
+            })
+            <div class="price">
+                <div class="price__inner">
+                    <div class="price__left">
+                        <h1 class="content__heading">Прайс</h1>
+                        <p><b>Уважаемые партнеры и гости сайта!</b></p>
+                        <p>Обращаем Ваше внимание, что на сайте представлен новый отптовый прайс - лист, не являющийся офертой. В связи с колебанием цен на сырье. возможно изменение цен на продукцию.</p>
+                        <div class="doc">
+                            <a href="#" class="doc__inner">
+                                <div class="doc__icon">
+                                    @@include('../../components/components.svg.html', {"name": "doc"})
+                                </div>
+                                <div class="doc__text"><span>Скачать</span> прайс - лист</div>
+                            </a>
+                        </div>
+                        <p>Каждый обратившийся к нам клиент имеет право на персональное ценовое предложение или скидку. Размер скидки зависит от:</p>
+                        <ol>
+                            <li>Объема закупаемой продукции;</li>
+                            <li>Сезона на момент покупки;</li>
+                            <li>Цен на сырье;</li>
+                            <li>Сложившихся деловых отношений;</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../../items/items.form.html', {
+    "bg": "lime",
+    "heading": "Подписаться на рассылку "
+})

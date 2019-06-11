@@ -1,13 +1,13 @@
-<div class="cab is--bg bg__login-page">
+<div class="cab is--bg bg__forgot-one-page">
     <div class="container">
         <div class="content is--full">
             @@include('cabinet.menu.html', {
-                "heading": "Вход в личный кабинет",
+                "heading": "Восстановление пароля",
                 "list": [
                     {
                         "title": "Вход",
-                        "tag1": "span",
-                        "tag2": "span"
+                        "tag1": "a href='@@pages.cabinet.login'",
+                        "tag2": "a"
                     },
                     {
                         "title": "Зарегистрироваться",
@@ -16,14 +16,14 @@
                     },
                     {
                         "title": "Забыли пароль?",
-                        "tag1": "a href='@@pages.cabinet.forgot'",
-                        "tag2": "a"
+                        "tag1": "span",
+                        "tag2": "span"
                     }
                 ]
             })
             <div class="user__form form">
-                <form class="form__wrap">
-                    <div class="form__col is3">
+                <form class="form__wrap is--block">
+                    <div class="form__col iscenter is3 ism0a is--w100 pt0 mb30">
                         <div class="form__block">
                             <label for="f_email">Ваше e-mail</label>
                             <div class="form__block__input">
@@ -31,18 +31,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form__col is3">
-                        <div class="form__block">
-                            <label for="f_password">Ваш пароль</label>
-                            <div class="form__block__input">
-                                <input type="password" name="f_password" id="f_password" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form__col is3 is--submit">
+                    <div class="form__col iscenter is3 ism0a is--w100 pt0">
                         <div class="form__block">
                             <div class="form__block__input">
-                                <input type="submit" class="btn" value="Войти в личный кабинет">
+                                <input type="submit" class="btn" value="отправить">
                             </div>
                         </div>
                     </div>

@@ -16,9 +16,12 @@
     }
     label {
         cursor: pointer;
+        padding-bottom: 0 !important;
         &.is--block {
             margin-right: 10px;
             display: flex;
+            min-width: 20px;
+            min-height: 20px;
             width: 20px;
             height: 20px;
             background: $lime;
@@ -39,6 +42,15 @@
 }
 
 .form {
+    &.is--lime {
+        background: $lime;
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            background: $lime;
+            border-color: rgba(18, 50, 8, 0.28);
+        }
+    }
     input[type="text"],
     input[type="password"],
     input[type="email"],
@@ -65,6 +77,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
+        &.is--block {
+            display: block;
+        }
     }
     &__col {
         width: 100%;
@@ -76,6 +91,38 @@
         }
         &.is3 {
             max-width: 33.33333%;
+        }
+        &.is35 {
+            max-width: 40%;
+        }
+        &.iscenter {
+            padding-top: 30px;
+            @media (max-width: $resp768) {
+                padding-top: 0;
+            }
+        }
+        &.ism0a {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &.ism0a00 {
+            margin-right: auto;
+        }
+        &.ism000a {
+            margin-left: auto;
+        }
+        .checkbox {
+            margin-bottom: 50px;
+            @media (max-width: $resp768) {
+                margin-bottom: 20px;
+            }
+            label {
+                font-size: 15px;
+                color: #1B1B1B;
+                a {
+                    color: $orange;
+                }
+            }
         }
     }
     &__block {
@@ -119,6 +166,15 @@
                     max-width: 100%;
                 }
             }
+            &.is35 {
+                max-width: 50%;
+                &.is--submit {
+                    max-width: 100%;
+                }
+                &.is--w100 {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }
@@ -137,6 +193,9 @@
                 max-width: 100%;
             }
             &.is3 {
+                max-width: 100%;
+            }
+            &.is35 {
                 max-width: 100%;
             }
         }
