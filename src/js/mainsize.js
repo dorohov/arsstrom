@@ -15,6 +15,9 @@
             $('.cab').css({
                 minHeight: 'calc(100vh - ' + elemsHeight + 'px)'
             })
+            $('.contacts__right').css({
+                minHeight: 'calc(100vh - ' + elemsHeight + 'px)'
+            })
             $('.item__left__inner').css({
                 paddingLeft: padding.left + 30
             })

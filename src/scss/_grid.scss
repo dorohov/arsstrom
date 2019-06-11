@@ -32,12 +32,12 @@
     font-family: 'BravoSC';
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff !important;
     transition: .25s all ease;
     display: inline-block;
     &:hover {
         background: transparent;
-        color: $orange;
+        color: $orange !important;
     }
     &.is--basket {
         padding: 15px 30px;
@@ -65,11 +65,11 @@
         width: 100%;
     }
     &.is--inverse {
-        color: #1B1B1B;
+        color: #1B1B1B !important;
         background: transparent;
         &:hover {
             background: $orange;
-            color: #fff;
+            color: #fff !important;
         }
     }
 }

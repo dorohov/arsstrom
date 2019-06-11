@@ -21,7 +21,9 @@
         "cabinet.delivery": "cabinet.delivery.html",
         "cabinet.password": "cabinet.password.html",
         "basket": "basket.html",
-        "basket.empty": "basket.empty.html"
+        "basket.empty": "basket.empty.html",
+        "search": "search.html",
+        "search.empty": "search.empty.html"
     },
     "menu": [
         {

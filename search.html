@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>(1) Корзина — Арсстром</title>
+    <title>Результаты поиска — Арсстром</title>
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -135,64 +135,105 @@
         </div>
     </div>
     <main>
-        <div class="cab">
+        <div class="page">
             <div class="container">
                 <div class="content is--full">
-                    <div class="heading is--center">
-                        <div class="heading__text">Оформить заказ</div>
-
-                    </div>
-                    <div class="basket">
-                        <form class="basket__inner">
-                            <div class="basket__table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Наименование продукта</th>
-                                            <th>Цена</th>
-                                            <th>Количество</th>
-                                            <th>Стоимость</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td data-title="Наименование"><a href="#">Арка садовая</a></td>
-                                            <td data-title="Цена"><span class="is--ruble">547</span></td>
-                                            <td data-title="Количество">
-                                                <div class="counter">
-                                                    <div class="counter__btn">
-                                                        <button type="button" class="is--minus"><svg class="svg-minus-dims svg is--minus">
-                                                                <use xlink:href="img/svg/sprites.svg#minus"></use>
-                                                            </svg></button>
+                    <div class="search">
+                        <div class="search__inner">
+                            <h1 class="content__heading">Результаты поиска</h1>
+                            <div class="search__table">
+                                <div class="basket__table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Наименование продукта</th>
+                                                <th>Цена</th>
+                                                <th>Количество</th>
+                                                <th>Стоимость</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Наименование"><a href="#">Арка садовая</a></td>
+                                                <td data-title="Цена"><span class="is--ruble">547</span></td>
+                                                <td data-title="Количество">
+                                                    <div class="counter">
+                                                        <div class="counter__btn">
+                                                            <button type="button" class="is--minus"><svg class="svg-minus-dims svg is--minus">
+                                                                    <use xlink:href="img/svg/sprites.svg#minus"></use>
+                                                                </svg></button>
+                                                        </div>
+                                                        <div class="counter__field"><input type="number" value="1" max="9999" min="1"></div>
+                                                        <div class="counter__btn">
+                                                            <button type="button" class="is--plus"><svg class="svg-plus-dims svg is--plus">
+                                                                    <use xlink:href="img/svg/sprites.svg#plus"></use>
+                                                                </svg></button>
+                                                        </div>
                                                     </div>
-                                                    <div class="counter__field"><input type="number" value="1" max="9999" min="1"></div>
-                                                    <div class="counter__btn">
-                                                        <button type="button" class="is--plus"><svg class="svg-plus-dims svg is--plus">
-                                                                <use xlink:href="img/svg/sprites.svg#plus"></use>
-                                                            </svg></button>
+                                                </td>
+                                                <td data-title="Стоимость"><span class="is--ruble">547</span></td>
+                                                <td data-title="Действия">
+                                                    <a href="basket.html" class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                            <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                        </svg> В корзину</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Наименование"><a href="#">Арка садовая</a></td>
+                                                <td data-title="Цена"><span class="is--ruble">547</span></td>
+                                                <td data-title="Количество">
+                                                    <div class="counter">
+                                                        <div class="counter__btn">
+                                                            <button type="button" class="is--minus"><svg class="svg-minus-dims svg is--minus">
+                                                                    <use xlink:href="img/svg/sprites.svg#minus"></use>
+                                                                </svg></button>
+                                                        </div>
+                                                        <div class="counter__field"><input type="number" value="1" max="9999" min="1"></div>
+                                                        <div class="counter__btn">
+                                                            <button type="button" class="is--plus"><svg class="svg-plus-dims svg is--plus">
+                                                                    <use xlink:href="img/svg/sprites.svg#plus"></use>
+                                                                </svg></button>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="Стоимость"><span class="is--ruble">547</span></td>
-                                            <td data-title="Действия"><a href="#" class="is--delete"><svg class="svg-busket-dims svg is--busket">
-                                                        <use xlink:href="img/svg/sprites.svg#busket"></use>
-                                                    </svg></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="basket__footer">
-                                <div class="basket__footer__left">
-                                    <div class="basket__footer__price">
-                                        Итого: <span>547</span>
-                                    </div>
+                                                </td>
+                                                <td data-title="Стоимость"><span class="is--ruble">547</span></td>
+                                                <td data-title="Действия">
+                                                    <a href="basket.html" class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                            <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                        </svg> В корзину</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Наименование"><a href="#">Арка садовая</a></td>
+                                                <td data-title="Цена"><span class="is--ruble">547</span></td>
+                                                <td data-title="Количество">
+                                                    <div class="counter">
+                                                        <div class="counter__btn">
+                                                            <button type="button" class="is--minus"><svg class="svg-minus-dims svg is--minus">
+                                                                    <use xlink:href="img/svg/sprites.svg#minus"></use>
+                                                                </svg></button>
+                                                        </div>
+                                                        <div class="counter__field"><input type="number" value="1" max="9999" min="1"></div>
+                                                        <div class="counter__btn">
+                                                            <button type="button" class="is--plus"><svg class="svg-plus-dims svg is--plus">
+                                                                    <use xlink:href="img/svg/sprites.svg#plus"></use>
+                                                                </svg></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Стоимость"><span class="is--ruble">547</span></td>
+                                                <td data-title="Действия">
+                                                    <a href="basket.html" class="btn is--basket"><svg class="svg-cart-dims svg is--cart">
+                                                            <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                                        </svg> В корзину</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="basket__footer__right">
-                                    <a href="#" class="btn">Оплатить заказ</a>
-                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
