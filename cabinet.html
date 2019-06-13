@@ -171,7 +171,7 @@
                                 <div class="form__block">
                                     <label for="f_name">Имя клиента</label>
                                     <div class="form__block__input">
-                                        <input type="text" name="f_name" id="f_name" required value="User1996">
+                                        <input type="text" name="f_name" id="f_name" required data-parsley-no-focus value="User1996">
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                                 <div class="form__block">
                                     <label for="f_email">E-mail</label>
                                     <div class="form__block__input">
-                                        <input type="email" name="f_email" id="f_email" required value="begalm@bk.ru">
+                                        <input type="email" name="f_email" id="f_email" required data-parsley-no-focus value="begalm@bk.ru">
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                 <div class="form__block">
                                     <label for="f_phone">Номер телефона</label>
                                     <div class="form__block__input">
-                                        <input type="text" name="f_phone" id="f_phone" required value="+7 (967) 765 - 89 - 97">
+                                        <input type="text" name="f_phone" id="f_phone" required data-parsley-no-focus data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" value="+7 (967) 765 - 89 - 97">
                                     </div>
                                 </div>
                             </div>
@@ -249,13 +249,8 @@
     <!-- modal form -->
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/jquery.fancybox.min.js"></script>
-    <script src="dist/js/svg4everybody.min.js"></script>
-    <script src="dist/js/parsley.min.js"></script>
-    <script src="dist/js/i18n/ru.js"></script>
-    <script src="dist/js/slick.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=78be7125-71bc-4f8f-b373-6b942d611647&amp;width=100%" type="text/javascript"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=78be7125-71bc-4f8f-b373-6b942d611647&amp;width=auto" type="text/javascript"></script>
+    <script src="dist/js/bundle-min.js"></script>
     <script>
         svg4everybody();
     </script>

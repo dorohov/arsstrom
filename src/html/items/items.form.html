@@ -11,7 +11,7 @@
                 <div class="form__block">
                     <label for="f_name">Ваше имя</label>
                     <div class="form__block__input">
-                        <input type="text" name="name" id="f_name">
+                        <input type="text" name="name" id="f_name" required data-parsley-no-focus>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                 <div class="form__block">
                     <label for="f_phone">Ваш телефон</label>
                     <div class="form__block__input">
-                        <input type="text" name="phone" id="f_phone">
+                        <input type="text" name="phone" id="f_phone" required data-parsley-no-focus data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$">
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <div class="form__block">
                     <label for="f_email">E-mail адрес</label>
                     <div class="form__block__input">
-                        <input type="email" name="email" id="f_email">
+                        <input type="email" name="email" id="f_email" required data-parsley-no-focus>
                     </div>
                 </div>
             </div>

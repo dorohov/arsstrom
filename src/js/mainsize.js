@@ -9,16 +9,10 @@
             var elemsHeight = $('.navbar').innerHeight() + $('.footer').innerHeight()
             var padding = document.getElementsByClassName('navbar__inner')[0].getBoundingClientRect()
 
-            $('main').css({
+            $('main, .cab').css({
                 minHeight: 'calc(100vh - ' + elemsHeight + 'px)'
             })
-            $('.cab').css({
-                minHeight: 'calc(100vh - ' + elemsHeight + 'px)'
-            })
-            $('.contacts__right').css({
-                minHeight: 'calc(100vh - ' + elemsHeight + 'px)'
-            })
-            $('.item__left__inner').css({
+            $('.item__left__inner, .contacts__left__top__inner, .contacts__left__form').css({
                 paddingLeft: padding.left + 30
             })
         }

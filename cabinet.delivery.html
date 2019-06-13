@@ -171,7 +171,7 @@
                                 <div class="form__block">
                                     <label for="f_adr">Адрес</label>
                                     <div class="form__block__input">
-                                        <input type="text" name="f_adr" id="f_adr" required value="Российская Федерация">
+                                        <input type="text" name="f_adr" id="f_adr" required value="Российская Федерация" required data-parsley-no-focus>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                                 <div class="form__block">
                                     <label for="f_obl">Область</label>
                                     <div class="form__block__input">
-                                        <input type="text" name="f_obl" id="f_obl" required value="Орловская область">
+                                        <input type="text" name="f_obl" id="f_obl" required value="Орловская область" required data-parsley-no-focus>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                 <div class="form__block">
                                     <label for="f_city">Город</label>
                                     <div class="form__block__input">
-                                        <input type="text" name="f_city" id="f_city" required value="Орел">
+                                        <input type="text" name="f_city" id="f_city" required value="Орел" required data-parsley-no-focus>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
                                 <div class="form__block">
                                     <label for="f_hadr">Домашний адрес</label>
                                     <div class="form__block__input">
-                                        <input type="text" name="f_hadr" id="f_hadr" required value="Домашний адрес">
+                                        <input type="text" name="f_hadr" id="f_hadr" required value="Домашний адрес" required data-parsley-no-focus>
                                     </div>
                                 </div>
                             </div>
@@ -257,13 +257,8 @@
     <!-- modal form -->
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/jquery.fancybox.min.js"></script>
-    <script src="dist/js/svg4everybody.min.js"></script>
-    <script src="dist/js/parsley.min.js"></script>
-    <script src="dist/js/i18n/ru.js"></script>
-    <script src="dist/js/slick.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=78be7125-71bc-4f8f-b373-6b942d611647&amp;width=100%" type="text/javascript"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=78be7125-71bc-4f8f-b373-6b942d611647&amp;width=auto" type="text/javascript"></script>
+    <script src="dist/js/bundle-min.js"></script>
     <script>
         svg4everybody();
     </script>

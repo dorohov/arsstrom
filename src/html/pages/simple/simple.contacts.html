@@ -1,8 +1,62 @@
 <div class="contacts">
     <div class="contacts__inner">
-        <div class="contacts__left"></div>
+        <div class="contacts__left content">
+            <div class="contacts__left__inner">
+                <div class="contacts__left__top">
+                    <div class="contacts__left__top__inner">
+                        @@include('../../items/items.breadcrumbs.html', {
+                            "list": [
+                                {
+                                    "url": "@@pages.index",
+                                    "title": "Главная"
+                                }
+                            ],
+                            "current": "Контакты"
+                        })
+                        <h1 class="content__heading">Контакты</h1>
+                        <ul class="contacts__list">
+                            <li><b>Адрес производства:</b> Тверская область, Калининский район, с. Петровское.</li>
+                            <li><b>Телефон:</b> @@phone</li>
+                            <li><b>Почта:</b> @@email</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts__left__bottom">
+                    <div class="contacts__left__form">
+                        <div class="contacts__left__form__heading">Подписаться на рассылку</div>
+                        <div class="form is--lime">
+                            <form class="form__wrap">
+                                <div class="form__col is1 mb30">
+                                    <div class="form__block">
+                                        <label for="f_name">Ваше имя</label>
+                                        <div class="form__block__input">
+                                            <input type="text" name="name" id="f_name" required data-parsley-no-focus>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__col is1 mb30">
+                                    <div class="form__block">
+                                        <label for="f_email">E-mail адрес</label>
+                                        <div class="form__block__input">
+                                            <input type="email" name="email" id="f_email" required data-parsley-no-focus>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__col is1 is--submit">
+                                    <div class="form__block">
+                                        <div class="form__block__input">
+                                            <input type="submit" class="btn" value="Отправить">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="contacts__right">
-            <div class="contacts__map" id="map"></div>
+            <div class="contacts__map" id="map" width="100%;"></div>
         </div>
     </div>
 </div>

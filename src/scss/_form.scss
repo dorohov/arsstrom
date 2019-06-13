@@ -89,6 +89,9 @@
         &.is4 {
             max-width: 25%;
         }
+        &.is1 {
+            max-width: 100%;
+        }
         &.is3 {
             max-width: 33.33333%;
         }
@@ -127,6 +130,7 @@
     }
     &__block {
         width: 100%;
+        position: relative;
         label {
             display: block;
             padding-bottom: 15px;
@@ -138,6 +142,32 @@
                 height: 100%;
             }
         }
+        .checkbox {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.parsley-errors-list.filled {
+    padding: 5px 10px;
+    background: $orange;
+    position: absolute;
+    color: #fff;
+    top: calc(100% + 10px);
+    z-index: 9999;
+    &::after {
+        bottom: 100%;
+        left: 10%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $orange;
+        border-width: 5px;
+        margin-left: -5px;
     }
 }
 
