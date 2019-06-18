@@ -1,3 +1,7 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-       
+    .catalog__card__img {
+        img {
+            width: 100% !important;
+        }
+    }      
 }

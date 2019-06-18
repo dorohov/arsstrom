@@ -126,6 +126,15 @@
             display: none;
             .btn {
                 margin-left: auto;
+                padding: 5px 25px;
+                &:hover {
+                    svg {
+                        fill: $orange;
+                    }
+                }
+                svg {
+                    fill: #fff;
+                }
             }
         }
         &__heading {
@@ -228,7 +237,7 @@
 }
 
 .advantages {
-    background: $lime;
+    background: #ECF8DB;
     overflow: hidden;
     &__line {
         display: flex;
@@ -371,7 +380,7 @@
                 width: 100%;
                 padding: 0 10px;
                 color: #1B1B1B;
-                font-size: 18px;
+                font-size: 22px;
                 line-height: 100%;
                 margin-bottom: 15px;
                 b {
@@ -392,7 +401,7 @@
                 padding-right: 40px;
                 position: relative;
                 &::after {
-                    background: url(../../img/svg/ruble.svg);
+                    background-image: url(../../img/svg/ruble.svg);
                     width: 35px;
                     height: 35px;
                     content: '';
@@ -401,6 +410,7 @@
                     bottom: 0;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    background-position: bottom left;
                 }
             }
             &__btn {
@@ -518,7 +528,7 @@
             box-sizing: border-box;
             text-align: left;
             thead {
-                background: $lime;
+                background: #ECF8DB;
                 tr {
                     th {
                         padding: 40px 70px;
@@ -579,6 +589,9 @@
         padding: 65px 0 0 70px;
         display: flex;
         align-items: center;
+        &.is--left {
+            padding-left: 0;
+        }
         &__left {
             margin-right: auto;
         }
@@ -614,11 +627,14 @@
 
 .user {
     &__menu {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         &__heading {
             margin-bottom: 30px;
             .heading {
                 margin-bottom: 0;
+                &__text {
+                    text-transform: none;
+                }
             }
         }
         &__items {
@@ -710,6 +726,24 @@
 .search {
     &__table {
         padding-top: 50px;
+        table {
+            tbody {
+                tr {
+                    td {
+                        &:last-child {
+                            padding-right: 15px;
+                            .btn {
+                                display: block;
+                                text-align: center;
+                                @media (max-width: 1025px) {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     &__empty {
         &__title {
@@ -1463,6 +1497,9 @@
     .advantages {
         &__block {
             max-width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

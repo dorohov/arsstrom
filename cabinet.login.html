@@ -198,7 +198,7 @@
     </main>
     <footer class="footer">
         <div class="footer__inner container">
-            <div class="footer__cop">&copy; 2007-2019 «ООО «Арсстром»</div>
+            <div class="footer__cop">&copy; 2007-2019 ООО «Арсстром»</div>
             <div class="footer__menu">
                 <ul>
                     <li>
@@ -231,7 +231,22 @@
             </div>
         </div>
     </footer>
-    <!-- modal form -->
+    <div id="modal_form" class="modal">
+        <div class="modal__head">
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__heading">Ваш запрос отправлен</div>
+            <div class="modal__body__text">
+                <p>Запрос обрабатывается. В ближийшее время <br>
+                    с Вами свяжется специалист</p>
+            </div>
+        </div>
+    </div>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=78be7125-71bc-4f8f-b373-6b942d611647&amp;width=auto" type="text/javascript"></script>

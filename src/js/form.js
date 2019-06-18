@@ -1,3 +1,7 @@
-$(document).ready(function() {
-    $('form').parsley()
-})
+(function($) {
+    "use strict"
+    $(function() {
+        
+        $('form').parsley()
+    })
+})(jQuery);

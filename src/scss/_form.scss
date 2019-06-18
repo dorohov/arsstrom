@@ -114,6 +114,12 @@
         &.ism000a {
             margin-left: auto;
         }
+        &.cabpt {
+            padding-top: 70px;
+            @media (max-width: 1025px) {
+                padding-top: 10px;
+            }
+        }
         .checkbox {
             margin-bottom: 50px;
             @media (max-width: $resp768) {

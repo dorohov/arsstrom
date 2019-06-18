@@ -142,7 +142,7 @@
                         <div class="user__menu">
                             <div class="user__menu__heading">
                                 <div class="heading is--center">
-                                    <div class="heading__text">Личный кабинет — begalm@bk.ru</div>
+                                    <div class="heading__text">Личный кабинет <span class='__is-m-r'>—</span> begalm@bk.ru</div>
 
                                 </div>
                             </div>
@@ -191,14 +191,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form__col is4 iscenter ism000a mb15">
+                            <div class="form__col is4 iscenter ism000a mb15 cabpt">
                                 <div class="form__block">
                                     <div class="form__block__input">
                                         <button class="btn is--block">сохранить</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form__col is4 iscenter ism0a00 mb15">
+                            <div class="form__col is4 iscenter ism0a00 mb15 cabpt">
                                 <div class="form__block">
                                     <div class="form__block__input">
                                         <button class="btn is--inverse is--block">выйти</button>
@@ -213,7 +213,7 @@
     </main>
     <footer class="footer">
         <div class="footer__inner container">
-            <div class="footer__cop">&copy; 2007-2019 «ООО «Арсстром»</div>
+            <div class="footer__cop">&copy; 2007-2019 ООО «Арсстром»</div>
             <div class="footer__menu">
                 <ul>
                     <li>
@@ -246,7 +246,22 @@
             </div>
         </div>
     </footer>
-    <!-- modal form -->
+    <div id="modal_form" class="modal">
+        <div class="modal__head">
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__heading">Ваш запрос отправлен</div>
+            <div class="modal__body__text">
+                <p>Запрос обрабатывается. В ближийшее время <br>
+                    с Вами свяжется специалист</p>
+            </div>
+        </div>
+    </div>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=78be7125-71bc-4f8f-b373-6b942d611647&amp;width=auto" type="text/javascript"></script>

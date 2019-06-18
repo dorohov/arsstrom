@@ -75,6 +75,7 @@ img {
     &__heading {
         font-size: 72px !important;
         margin-bottom: 30px !important;
+        font-weight: 300;
     }
     h1,h2,h3,h4,h5,h6 {
         color: #1B1B1B;
@@ -148,7 +149,7 @@ img {
         &__heading {
             font-size: 48px !important;
         }
-        p, ul li {
+        p, ul.list li {
             font-size: 16px;
         }
         ul.list li {

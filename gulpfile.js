@@ -150,6 +150,7 @@ function createBundleJs() {
                 './dist/js/parsley.min.js',
                 './dist/js/i18n/ru.js',
                 './dist/js/slick.min.js',
+                './dist/js/jquery.modal.min.js',
                 './dist/js/main.js',
             ])
             .pipe(sourcemaps.init())

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content is--full">
             @@include('cabinet.menu.html', {
-                "heading": "Личный кабинет — begalm@bk.ru",
+                "heading": "Личный кабинет <span class='__is-m-r'>—</span> begalm@bk.ru",
                 "list": [
                     {
                         "title": "Личные данные",
@@ -47,20 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form__col is4 iscenter ism000a mb15">
-                        <div class="form__block">
-                            <div class="form__block__input">
-                                <button class="btn is--block">сохранить</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form__col is4 iscenter ism0a00 mb15">
-                        <div class="form__block">
-                            <div class="form__block__input">
-                                <button class="btn is--inverse is--block">выйти</button>
-                            </div>
-                        </div>
-                    </div>
+                    @@include('cabinet.controls.html')
                 </form>
             </div>
         </div>
